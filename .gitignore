@@ -1,0 +1,11 @@
+/dist
+/npm-debug.log
+/node_modules
+/package-lock.json
+/.idea/
+/**/*.psd
+/**/Thumbs.db
+/**/*.DS_Store
+*.lock
+*.log
+
