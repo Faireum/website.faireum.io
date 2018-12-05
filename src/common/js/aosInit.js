@@ -15,7 +15,3 @@ $(function(){
 $(window).on('scroll', function() {
     AOS.refreshHard();
 })
-
-$(window).on('click', function() {
-    AOS.refresh();
-})
