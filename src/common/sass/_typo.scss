@@ -1,0 +1,124 @@
+h1,
+h2,
+h3,
+h4 {
+  $font-family-base: "Poppins", sans-serif;
+
+  &.pin {
+    position: relative;
+    text-align: center;
+    padding-bottom: 18px;
+
+    &::after {
+      display: block;
+      content: url('data:image/svg+xml; utf8, <svg fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".32" fill="#00A1E9" d="M21.5 3.226h-8.536v-1H21.5zM10.082 3.226H1.501v-1h8.581z"/><circle cx="11.5" cy="2.727" r="1.5" transform="rotate(-180 11.5 2.727)" fill="#111931" stroke="#00A1E9"/><circle cx="21.502" cy="2.727" r="1" transform="rotate(-180 21.502 2.727)" fill="#00A1E9"/><circle cx="1.5" cy="2.727" r="1" transform="rotate(-180 1.5 2.727)" fill="#00A1E9"/></svg>');
+      position: absolute;
+      width: 22px;
+      height: 4px;
+      left: 50%;
+      margin-left: -11px;
+      bottom: 4px;
+    }
+  }
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 1.01px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+p {
+  $font-family-second: "Open Sans", sans-serif;
+  color: $color-text;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.01px;
+  font-weight: 300;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  &.vertical {
+    tr {
+      &:first-of-type {
+        td {
+          &:first-of-type {
+            color: $color-blue;
+          }
+
+          &:last-of-type {
+            color: $color-white;
+          }
+        }
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 1px dashed $color-blue;
+      }
+
+      td {
+        padding: 16px 24px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.24;
+
+        &:first-of-type {
+          width: 200px;
+          padding-left: 0;
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: $font-weight-regular;
+          font-family: $font-family-base;
+        }
+
+        &:last-of-type {
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: $font-weight-light;
+          font-family: $font-family-second;
+          color: $color-text;
+        }
+      }
+    }
+  }
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}

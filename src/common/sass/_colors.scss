@@ -1,0 +1,18 @@
+$color-white: #fff;
+$color-blue: #00a1e9;
+$color-blue-light: #4fc9ff;
+$color-accent: #d92521;
+$color-text: #c0c0d0;
+$color-text-2: #818190;
+$color-text-3: #bdbdbd;
+$color-bg: #090d19;
+$color-dark: #020320;
+$color-card: #111932;
+$color-card-2: #1a264b;
+$color-card-3: #425caa;
+$color-card-4: #172141;
+
+$radial-gradient: radial-gradient($color-card 0%, rgba(17, 25, 50, 0) 66%);
+$radial-gradient-2: radial-gradient($color-card-4 0%, rgba(17, 25, 50, 0) 73%);
+$linear-gradient-red: linear-gradient(to left, rgba(217, 37, 33, 1) 0%, rgba(248, 80, 50, 1) 44%, rgba(237, 133, 131, 1) 100%);
+$linear-gradient-green: linear-gradient(to left, #27ae60 0%, #84ca10 100%);

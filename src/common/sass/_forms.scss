@@ -1,0 +1,60 @@
+input,
+textarea {
+  border: 1px solid $color-card-2;
+  border-radius: 2px;
+  color: white;
+  font-family: $font-family-second;
+  transition: 0.3s;
+
+  &:focus {
+    border: 1px solid #425caa;
+  }
+
+  @include placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    color: $color-text;
+    font-family: $font-family-second;
+  }
+}
+
+input {
+  display: block;
+  height: 40px;
+  padding: 0 16px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  margin-right: -12px;
+  margin-left: -12px;
+
+  @include bp($mobile) {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  input {
+    width: calc(50% - 24px);
+    margin: 0 12px;
+
+    @include bp($mobile) {
+      margin: 0 0 24px;
+      width: 100%;
+    }
+  }
+}
+
+input[type="text"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
+}
