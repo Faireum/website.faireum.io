@@ -10,17 +10,6 @@ function lang() {
     $(this).toggleClass('lang__head_active');
   });
 
-  item.bind('click', function () {
-    var text = $(this).text(),
-      parent = $(this).closest(container);
-
-    parent.find('li').removeClass('lang__item_checked');
-    $(this).addClass('lang__item_checked');
-    parent.find('.lang__head').find('span').text(text);
-    parent.find('ul').stop().fadeToggle('fast');
-    parent.find('.lang__head').toggleClass('lang__head_active');
-  });
-
   $(document).bind('click', function (event) {
     if (container.has(event.target).length === 0) {
       selecBox.removeClass('lang__head_active');
