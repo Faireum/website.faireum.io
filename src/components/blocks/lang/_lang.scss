@@ -1,0 +1,68 @@
+.lang {
+  position: relative;
+  width: 70px;
+
+  &__head {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 32px;
+    border: 1px solid $color-blue;
+    color: $color-white;
+    border-radius: 16px;
+    z-index: 11;
+    cursor: pointer;    
+    &:hover {
+      color: $color-blue;      
+    }
+  }
+
+  &__text {    
+    font-size: 13px;
+    line-height: 1;    
+    z-index: 2;
+  }
+
+  &__items {
+    display: none;    
+    position: absolute;
+    border: 1px solid $color-blue;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $color-bg;
+    z-index: 1010;
+  }
+
+  &__item {
+    color: $color-white;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    transition: .3s;
+
+    a {
+      color: $color-white;
+      text-underline: none;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $color-blue;
+    }
+    
+    &_checked {
+      color: $color-text-2;
+    }
+    &:hover {  
+      color: $color-blue;     
+    }
+  }
+}
+
