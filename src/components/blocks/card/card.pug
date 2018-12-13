@@ -1,0 +1,20 @@
+mixin card(icon, title, text)
+  div.card
+    div.card__inner(data-toggle-class='flipped') 
+      div.card__front
+        div.card__info 
+          div.card__info-icon 
+            img(src=imgUrl+icon, alt=title)
+          h4= title
+        span.card__front-corner
+        span.card__front-corner
+        span.card__front-corner
+        span.card__front-corner
+      div.card__back
+        div.card__text 
+          h4= title
+          p= text 
+        span.card__back-corner
+        span.card__back-corner
+        span.card__back-corner
+        span.card__back-corner
