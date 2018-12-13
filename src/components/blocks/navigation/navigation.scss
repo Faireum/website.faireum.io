@@ -1,0 +1,92 @@
+.navigation {
+  @include bp ($mobile) {
+    display: none;
+  }
+  @include bp ($tablet) {
+    display: none;
+  }
+  position: fixed;
+  z-index: 1024;
+  top: 48px;
+  left: 48px;
+  display: flex;
+  flex-direction: column;  
+  counter-reset: navNumber;
+
+  &__item {
+    position: relative;
+    display: block;
+    width: 16px;
+    border-top: 1px solid $color-white;    
+    padding: 7px 0;
+    color: $color-white;
+    counter-increment: navNumber;
+    transition: .3s ease;
+    span {
+      display: block;
+      overflow: hidden;
+      margin-top: -7px;
+      height: 0;
+      writing-mode: vertical-lr;
+      //transform: rotate(-.5turn);
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    &::before {
+      content: counter(navNumber, decimal-leading-zero);
+      font-size: 11px;
+      position: absolute;
+      top: -5px;
+      left: -24px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      top: -3px;
+      right: 0;
+      width: 24px;
+      height: 5px;
+      background-image: url('../img/active.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 3;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s ease;
+    }
+
+    &_active {
+      padding: 22px 0;
+      span {
+        color: $color-blue;
+        margin-top: 0;
+        height: auto;
+        opacity: 1;
+      }
+      &::before,
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &:hover {
+      padding: 22px 0;
+      span {
+        margin-top: 0;
+        height: auto;
+        opacity: 1;
+      }
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
