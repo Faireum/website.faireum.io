@@ -1,0 +1,32 @@
+.popups.is_hidden
+  div#popup_team.popup.popup_team
+    div.content__wrapper
+      div.content
+        div.popup__img
+          div.teammate__avatar_holder
+            div.teammate__avatar
+        div.popup__content
+          h4.teammate__name
+          span.teammate__position
+
+    div.popup__cubes
+      include ../../../icons/popup-cubes.html
+
+  div#popup_join.popup.popup_join
+    div.content__wrapper
+      div.content
+        h3 Join for the latest news and access to early whitelist
+        form.form_join
+          input(type='email' name='email' placeholder='Enter your e-mail address')
+          label.checkbox I have read and agree to the
+            a.link(href='?') Privacy Policy
+            input(type="checkbox" checked="checked")&attributes(attributes)
+            span.checkbox__mark
+          button.btn.btn_big(type='submit') Submit
+      div.content_success
+        h3 Congratulations
+        p We sent a link to activate your subscription to your mail. Check your email. Click on the link in the email to activate the subscription.
+        a.btn.btn_big(href='#') Go It!
+    div.popup__cubes
+      include ../../../icons/popup-cubes.html
+

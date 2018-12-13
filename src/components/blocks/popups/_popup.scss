@@ -1,0 +1,195 @@
+.popup {
+  background: transparent;
+  color: white;
+
+  &__cubes {
+    position: absolute;
+    top: 75px;
+    right: 0;
+
+    @include bp($mobile) {
+      z-index: -1;
+      top: 0;
+    }
+
+    svg {
+      display: block;
+
+      .cube-2 {
+        transform: translatey(0);
+        animation: levitation 8s ease-in-out infinite;
+      }
+      .cube-3 {
+        transform: translatey(0);
+        animation: levitation 7s ease-in-out infinite;
+      }
+      .cube-4 {
+        transform: translatey(0);
+        animation: levitation 5s ease-in-out infinite;
+      }
+    }
+  }
+
+  .content__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include bp($mobile) {
+      padding: 0 10px;
+    }
+  }
+
+  .btn_close {
+    position: absolute;
+    right: 42px;
+    top: 26px;
+
+    @include bp($tablet) {
+      right: 10px;
+      top: 14px;
+    }
+
+    @include bp($mobile) {
+      top: 14px;
+      right: 10px;
+    }
+  }
+}
+
+.fancybox-slide--html {
+  background: $color-dark;
+  background-image: url(../img/popup-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.popup_team {
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  padding: 0;
+  margin: 0;
+
+  @include bp($mobile) {
+    width: auto;
+    height: auto;
+  }
+
+  .content {
+    max-width: 900px;
+    padding: 0;
+    display: flex;
+
+    @include bp($mobile) {
+      width: 100%;
+      padding: 140px 16px 50px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-family: $font-family-second;
+    font-weight: $font-weight-light;
+
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .popup__img {
+    display: block;
+    width: 218px;
+
+    @include bp($tablet) {
+      min-width: 218px;
+    }
+  }
+
+  .popup__content {
+    padding-left: 90px;
+
+    @include bp($tablet) {
+      padding-left: 45px;
+    }
+
+    @include bp($mobile) {
+      padding-left: 0;
+    }
+  }
+
+  .teammate {
+    &__name {
+      margin-bottom: 4px;
+    }
+
+    &__position {
+      margin-bottom: 24px;
+    }
+
+    &__avatar_holder {
+      margin-bottom: 16px;
+    }
+
+    &__socials {
+      margin-bottom: 0;
+
+      @include bp($mobile) {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+.popup_join {
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  padding: 0;
+  margin: 0;
+
+  .content {
+    max-width: 425px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .content_success {
+    max-width: 425px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+    p {
+      margin-bottom: 48px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .checkbox {
+    margin-bottom: 48px;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: $font-family-base;
+    color: $color-text;
+  }
+
+  .btn {
+    height: 40px;
+  }
+}
