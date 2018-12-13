@@ -1,0 +1,44 @@
+.countdown {
+  display: flex;
+  justify-content: center;  
+  
+  &__item {
+    > div {
+      &:first-child {        
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        font-size: 24px;
+        line-height: 34px; 
+        letter-spacing: 1.01px;
+        color: $color-white;   
+        margin-left: 14px;
+        margin-right: 14px;    
+        margin-bottom: 6px;        
+
+        &::after {
+          position: absolute;
+          left: calc(100% + 12px);
+          top: 1px;
+          content: ':';
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: 300;
+        }
+
+        &.seconds {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  } 
+
+  &__label {
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 300;
+    color: $color-text-2;
+  }
+}
