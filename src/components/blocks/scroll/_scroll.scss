@@ -1,0 +1,70 @@
+.scroll {
+  $p: &;
+
+  @include bp($mobile) {
+    display: none;
+  }
+
+  position: fixed;
+  width: 13px;
+  left: 48px;
+  bottom: 32px;
+  padding-bottom: 32px;
+  transition: .3s;
+  z-index: 1025;
+  cursor: pointer; 
+
+  span {
+    writing-mode: vertical-lr;
+    font-size: 13px;
+    font-weight: normal;
+    position: relative;
+    transform: rotate(.5turn);
+    transition: .3s;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 5px;
+    height: 25px;
+    overflow: hidden;
+    transition: .3s;
+    svg {
+      display: block;
+      path {
+        fill: $color-white;
+      }
+      circle {
+        stroke: $color-white;
+      }
+    }
+  }  
+
+  &_up {
+    padding-top: 32px;
+    padding-bottom: 0;
+
+    #{$p}__icon {
+      top: 0;
+      bottom: auto;
+    }
+  }
+
+  &:hover {
+    color: $color-blue;
+
+    #{$p}__icon {
+      svg {
+        path {
+          fill: $color-blue;
+        }
+        circle {
+          stroke: $color-blue;
+        }
+      }
+    }
+  }
+}
