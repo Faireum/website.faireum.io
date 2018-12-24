@@ -1,0 +1,68 @@
+.checkbox {
+  $p: &;
+
+  position: relative; 
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  color: $color-white;
+  font-size: 11px;
+  line-height: 1.24;
+  a {
+    margin-left: 5px;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid $color-card-2;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    transition: .3s;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      left: 5px;
+      top: 2px;
+      width: 3px;
+      height: 7px;
+      border: solid $color-white;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+      transition:  .3s;
+    }
+  }
+
+  input {
+    &[type='checkbox'] {
+      position: absolute;
+      opacity: 0;
+      display: none;
+    }
+    &:checked {
+      ~ #{$p}__mark {    
+        border: 1px solid $color-card-3; 
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    input {
+      ~ #{$p}__mark {
+        border-color: $color-card-3;
+      }
+    }
+  }  
+}
