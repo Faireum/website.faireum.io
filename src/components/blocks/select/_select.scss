@@ -1,0 +1,92 @@
+.select {
+  $p: &;
+
+  position: relative;
+
+  &_white {
+    #{$p}__text {
+      color: $color-white;
+    }
+    #{$p}__head {
+      svg {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__head {
+    @include bp($mobile) {
+      padding: 15px 0;
+    }
+    display: flex;
+    text-transform: uppercase;
+    padding: 15px 0;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    svg {
+      @include bp($mobile) {
+        margin-left: 10px;
+        height: 14px;
+      }
+      transform-origin: center;
+      fill: $color-white;
+      transform: rotate(-90deg);
+      will-change: transform;
+      transition: 0.1s;
+    }
+    &_active {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__items {
+    @include bp($mobile) {
+      padding: 14px 8px;
+    }
+
+    position: absolute;
+    display: none;
+    left: 0;
+    padding: 20px 8px;
+    background: $color-card-2;
+    border-radius: 2px;
+    z-index: 1024;
+  }
+
+  &__item {
+    @include bp($mobile) {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &_checked {
+      color: $color-blue;
+    }
+  }
+}

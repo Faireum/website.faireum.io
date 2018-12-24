@@ -1,0 +1,11 @@
+mixin select(label, style, ...filters)
+  div.select(class=style ? 'select_' + style : '')&attributes(attributes)
+    div.select__head
+      span.select__text= label
+      include ../../../icons/select-arrow.html
+    ul.select__items
+      each filter, index in filters
+        if index === 0
+          li.select__item.select__item_checked= filter
+        else
+          li.select__item= filter
