@@ -60,7 +60,6 @@
                 });
 
                 document.addEventListener('visibilitychange', function () {
-                    //TODO 处理标签切换导致window.requestAnimationFrame不刷新,但是interval刷新继续执行的问题
                     if(document.visibilityState) {
                         if(document.visibilityState == 'visible' && !interval) {
                             S.UI.drawCanvas(SHOW_TIME)
