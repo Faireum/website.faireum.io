@@ -1,0 +1,57 @@
+.header {
+  $p: &;
+  @include bp($mobile) {
+    position: fixed;
+    height: 80px;
+
+    &_sticky {
+      background-color: rgba($color-bg, .85);
+    }
+  }
+  @include bp($tablet) {
+    position: fixed;
+    height: 80px;
+
+    &_sticky {
+      background-color: rgba($color-bg, .85);
+    }
+  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 48px;
+  z-index: 1028;
+
+  &__logo {
+    @include bp($mobile) {
+      width: 60px;
+    }
+    @include bp($tablet) {
+      top: 23px;
+      width: 60px;
+    }
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0) !important;
+  }
+
+  &__burger {
+    @include bp($mobile) {
+      display: block;
+    }
+    @include bp($tablet) {
+      display: block;
+      left: 48px;
+    }
+    display: none;
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 16px;
+  }
+
+
+}
