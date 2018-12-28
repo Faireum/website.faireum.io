@@ -53,5 +53,118 @@
     left: 16px;
   }
 
+  &__mobm {
+    display: none;
+    position: absolute;
+    background: $color-bg;
+    width: 100%;
+    min-height: 568px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1027;
 
+    &-close {
+      position: absolute;
+      top: 20px;
+      right: 16px;
+    }
+    &-logo {
+      position: absolute;
+      top: 15px;
+      left: 16px;
+      width: 60px;
+    }
+    &-nav {
+      position: absolute;
+      top: 142px;
+      left: 50%;
+      margin-left: -93px;
+      width: 186px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-link {
+      width: 50%;
+      color: $color-white;
+      font-size: 13px;
+      padding-right: 16px;
+      margin-bottom: 32px;
+    }
+    &-btns {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% - 32px);
+      left: 16px;
+      bottom: 79px;
+    }
+    &-socials {
+      position: absolute;
+      width: calc(100% - 64px);
+      left: 32px;
+      bottom: 23px;
+    }
+  }
+
+  &__nav {
+    @include bp($mobile) {
+      display: none;
+    }
+    @include bp($tablet) {
+      display: none;
+    }
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-left {
+      width: 45%;
+      margin-right: 10%;
+      text-align: right;
+    }
+    &-right {
+      width: 45%;
+    }
+    &-link {
+      position: relative;
+      color: $color-white;
+      font-size: 13px;
+      margin: 0 13px;
+
+      &::after {
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        bottom: -6px;
+        content: url('data:image/svg+xml; utf8, <svg fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#00A1E9" d="M.5 2h38.772v1H.5z"/><circle cx="19.885" cy="2.5" r="1.5" fill="#020320" stroke="#00A1E9"/></svg>');
+        width: 40px;
+        height: 5px;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+      }
+
+      &:hover {
+        &::after {
+          bottom: -8px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__lang {
+    @include bp($mobile) {
+      top: 23px;
+      right: 16px;
+    }
+    position: absolute;
+    top: 32px;
+    right: 48px;
+  }
 }
