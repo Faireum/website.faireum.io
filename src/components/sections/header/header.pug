@@ -4,3 +4,44 @@ header.header
 
   div.header__burger(data-aos="fade", data-aos-delay="300")
     include ../../../icons/menu-icon.html
+
+  div.header__mobm
+    a.header__mobm-logo(href="#", name="index.html")
+      img(src=imgUrl+"logo.svg", alt="#{i18n.common.projectName}")
+    div.header__mobm-close.btn_close
+      include ../../../icons/close.html
+    div.header__mobm-nav
+      a.header__mobm-link(href="#", name="#home") #{i18n.common.titles.home}
+      a.header__mobm-link(href="#", name="#about") #{i18n.common.titles.about}
+      a.header__mobm-link(href="#", name="#business") #{i18n.common.titles.business}
+      a.header__mobm-link(href="#", name="#problem") #{i18n.common.titles.problem}
+      a.header__mobm-link(href="#", name="#solution") #{i18n.common.titles.solution}
+      a.header__mobm-link(href="#", name="#sale") #{i18n.common.titles.sale}
+      a.header__mobm-link(href="#", name="#roadmap") #{i18n.common.titles.roadmap}
+      a.header__mobm-link(href="#", name="#faq") #{i18n.common.titles.faq}
+      a.header__mobm-link(href="#", name="#contact") #{i18n.common.titles.contact}
+      a.header__mobm-link(href="#", name="#subscribe") #{i18n.common.titles.subscribe}
+    div.header__mobm-btns
+      a.btn.btn_big(href="#", name="?" data-fancybox="" data-src="#popup_join") #{i18n.common.whitelist}
+      a.btn.btn_big.btn_white(href=fileUrl+"Faireum_whitepaper1.0_" + i18n.common.language + ".pdf",target="_blank") #{i18n.common.whitepaper}
+    div.header__mobm-socials
+      include ../../blocks/socials/socials
+
+  nav.header__nav
+    div.header__nav-left
+      a.header__nav-link(href="#", name="#home", data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.home}
+      a.header__nav-link(href="#", name="#about", data-aos="fade-up", data-aos-delay="300") #{i18n.common.titles.about}
+      a.header__nav-link(href="#", name="#business", data-aos="fade-up", data-aos-delay="400") #{i18n.common.titles.business}
+      a.header__nav-link(href="#", name="#problem", data-aos="fade-up", data-aos-delay="500") #{i18n.common.titles.problem}
+      a.header__nav-link(href="#", name="#solution", data-aos="fade-up", data-aos-delay="600") #{i18n.common.titles.solution}
+
+    div.header__nav-right
+      a.header__nav-link(href="#", name="#sale", data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.sale}
+      a.header__nav-link(href="#", name="#roadmap", data-aos="fade-up", data-aos-delay="300") #{i18n.common.titles.roadmap}
+      a.header__nav-link(href="#", name="#faq", data-aos="fade-up", data-aos-delay="400") #{i18n.common.titles.faq}
+      a.header__nav-link(href="#", name="#contact", data-aos="fade-up", data-aos-delay="500") #{i18n.common.titles.contact}
+      a.header__nav-link(href="#", name="#subscribe", data-aos="fade-up", data-aos-delay="600") #{i18n.common.titles.subscribe}
+
+
+  div.header__lang(data-aos="fade", data-aos-delay="300")
+    include ../../blocks/lang/lang
