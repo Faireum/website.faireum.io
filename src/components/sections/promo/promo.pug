@@ -1,0 +1,42 @@
+section#home.promo
+  div.promo__container
+
+    div.promo__slider 
+
+      div.promo__slide
+        div.promo__slide-wrap
+          div.promo__slide-title1(data-aos="fade-right", data-aos-delay="200") #{i18n.module.promo.sologan1}
+          div.promo__slide-animation
+            img.promo__slide-cube1(src=imgUrl+"cubes/01.png", alt=i18n.module.promo.cube1)
+            img.promo__slide-cube2(src=imgUrl+"cubes/02.png", alt=i18n.module.promo.cube2)
+            img.promo__slide-cube3(src=imgUrl+"cubes/03.png", alt=i18n.module.promo.cube3)
+            img.promo__slide-cube4(src=imgUrl+"cubes/04.png", alt=i18n.module.promo.cube4)
+            img.promo__slide-cube5(src=imgUrl+"cubes/05.png", alt=i18n.module.promo.cube5)
+            img.promo__slide-cube6(src=imgUrl+"cubes/06.png", alt=i18n.module.promo.cube6)
+          div.promo__slide-title2(data-aos="fade-left", data-aos-delay="300") #{i18n.module.promo.sologan2}
+            span(data-aos="fade-right", data-aos-delay="400") #{i18n.module.promo.sologanRemark}
+
+    div.promo__controls(data-aos="fade-up", data-aos-delay="200")
+      div.promo__nav 
+        div.promo__nav-prev
+          i.icon_arrow-left
+        div.promo__nav-next
+          i.icon_arrow-right
+      div.promo__dots 
+      div.promo__numof
+        span.promo__numof-cur 1
+        | /
+        span.promo__numof-all 0
+
+    div.promo__counter
+      div.promo__counter-title(data-aos="fade-up", data-aos-delay="200") #{i18n.module.promo.saleBegin}
+      include ../../blocks/countdown/countdown
+      div.promo__btns(data-aos="fade-up", data-aos-delay="400")
+        a.btn.btn_big(href="?" data-fancybox="" data-src="#popup_join") #{i18n.common.whitelist}
+        a.btn.btn_big.btn_white(href=fileUrl+"Faireum_whitepaper1.0_" + i18n.common.language + ".pdf",target="_blank") #{i18n.common.whitepaper}
+
+  div.promo__socials
+    include ../../blocks/socials/socials
+    
+
+
