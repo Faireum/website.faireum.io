@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="343px" viewBox="0 0 342 343" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>tokens</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="52.8023387%" y1="28.0205757%" x2="46.1816254%" y2="73.5733308%" id="linearGradient-1">
+            <stop stop-color="#D92521" offset="0%"></stop>
+            <stop stop-color="#00A1E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.6012624%" y1="345.489314%" x2="12.9081275%" y2="-269.014418%" id="linearGradient-2">
+            <stop stop-color="#D92521" offset="0%"></stop>
+            <stop stop-color="#00A1E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.5220332%" y1="-9.93858726%" x2="20.9981554%" y2="94.9866654%" id="linearGradient-3">
+            <stop stop-color="#00A1E9" offset="0%"></stop>
+            <stop stop-color="#D92521" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-26.5220354%" y1="99.6120561%" x2="121.967288%" y2="-6.20710236%" id="linearGradient-4">
+            <stop stop-color="#D92521" offset="0%"></stop>
+            <stop stop-color="#00A1E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="108.486957%" x2="14.4526316%" y2="-18.8550725%" id="linearGradient-5">
+            <stop stop-color="#00A1E9" offset="0%"></stop>
+            <stop stop-color="#D92521" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.294262%" y1="-2.58153487%" x2="103.447171%" y2="95.3261834%" id="linearGradient-6">
+            <stop stop-color="#D92521" offset="0%"></stop>
+            <stop stop-color="#00A1E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.3318327%" y1="0%" x2="22.2963688%" y2="106.546516%" id="linearGradient-7">
+            <stop stop-color="#00A1E9" offset="0%"></stop>
+            <stop stop-color="#D92521" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="2.08333333%" id="radialGradient-8">
+            <stop stop-color="#9DFFFF" stop-opacity="0.22" offset="0%"></stop>
+            <stop stop-color="#9DFFFF" stop-opacity="0.0826519" offset="62.4309%"></stop>
+            <stop stop-color="#9DFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tokens" transform="translate(0.000000, 1.000000)">
+            <g id="circle-chart">
+                <path d="M284.784,44.3108 C354.51,107.097 360.172,214.626 297.386,284.352 C234.601,354.077 127.071,359.74 57.2488,296.928 C-12.5735,234.116 -18.1391,126.613 44.6466,56.8872 C88.669,8.1192 151.541,-10.544 215.003,6.4604" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M215.002,6.46 C242.241,13.7587 263.851,25.4502 284.783,44.3104" id="Shape" stroke="url(#linearGradient-1)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M148.055,278.064 C88.599,265.445 50.7055,207.079 63.324,147.623 C75.943,88.166 134.396,50.3228 193.766,62.892 C253.135,75.46 291.152,134.013 278.497,193.333 C269.642,234.87 240.418,265.687 199.437,276.668" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M199.387,276.755 C181.765,281.477 165.837,281.865 148.055,278.064" id="Shape" stroke="url(#linearGradient-2)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M90.8,129.734 C113.357,85.398 167.521,67.862 211.856,90.419 C256.192,112.975 273.728,167.14 251.172,211.475 C228.615,255.811 174.451,273.347 130.115,250.791 C99.144,234.951 81.042,205.394 81.042,170.605" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M80.97,170.534 C80.97,155.685 84.011,143.027 90.728,129.663" id="Shape" stroke="url(#linearGradient-3)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M239.476,156.082 C247.476,193.839 223.418,231.081 185.564,239.056 C147.71,247.03 110.565,222.997 102.59,185.144 C94.616,147.29 118.649,110.144 156.502,102.17 C186.689,95.764 216.208,108.85 231.693,135.672" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M164.804,141.364 C181.037,137.881 196.935,148.217 200.418,164.45 C203.901,180.683 193.565,196.581 177.332,200.064 C161.099,203.547 145.201,193.212 141.718,176.978 C138.968,164.017 144.618,151.402 156.05,144.802" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M155.998,144.715 C158.856,143.065 161.481,142.011 164.802,141.364" id="Shape" stroke="url(#linearGradient-4)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M123.51,186.066 C115.01,159.766 129.31,131.566 155.61,123.066 C181.91,114.566 210.11,128.866 218.61,155.166 C227.11,181.466 212.81,209.666 186.51,218.166 C181.21,219.866 176.61,220.566 171.11,220.566" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M171.01,220.666 C148.91,220.666 130.31,207.166 123.51,186.166" id="Shape" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M300.945,245.602 C259.508,317.372 167.745,341.96 96.072,300.498 C24.3985,259.035 -0.26,167.395 41.0799,95.651 C82.42,23.9065 174.279,-0.7072 245.953,40.7552 C281.838,61.473 305.077,91.792 315.818,131.878" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M315.914,131.852 C326.629,171.841 321.689,209.814 300.97,245.699" id="Shape" stroke="url(#linearGradient-6)" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M150.71,42.2666 C221.61,31.0666 288.21,79.367 299.41,150.367 C310.61,221.267 262.31,287.867 191.31,299.067 C148.81,305.767 109.51,293.067 79.01,262.567" id="Shape" stroke="#00A1E9" opacity="0.16"></path>
+                <path d="M79.11,262.567 C28.3098,211.767 28.3098,129.467 79.11,78.767 C99.41,58.4666 122.31,46.7666 150.71,42.2666" id="Shape" stroke="url(#linearGradient-7)" stroke-width="4" stroke-linecap="round"></path>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(184.400000, 136.390000) rotate(-180.000000) translate(-184.400000, -136.390000) " cx="184.4" cy="136.39" r="24"></circle>
+                <path d="M184.4,159.889 C197.378692,159.889 207.9,149.367692 207.9,136.389 C207.9,123.410308 197.378692,112.889 184.4,112.889 C171.421308,112.889 160.9,123.410308 160.9,136.389 C160.9,149.367692 171.421308,159.889 184.4,159.889 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(184.400000, 136.389000) rotate(-180.000000) translate(-184.400000, -136.389000) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(184.400000, 136.389000) rotate(-180.000000) translate(-184.400000, -136.389000) " cx="184.4" cy="136.389" r="19.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(169.912000, 39.435500) rotate(-180.000000) translate(-169.912000, -39.435500) " cx="169.912" cy="39.4355" r="24"></circle>
+                <path d="M169.912,62.9346 C182.890692,62.9346 193.412,52.4132916 193.412,39.4346 C193.412,26.4559084 182.890692,15.9346 169.912,15.9346 C156.933308,15.9346 146.412,26.4559084 146.412,39.4346 C146.412,52.4132916 156.933308,62.9346 169.912,62.9346 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(169.912000, 39.434600) rotate(-180.000000) translate(-169.912000, -39.434600) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(169.912000, 39.434600) rotate(-180.000000) translate(-169.912000, -39.434600) " cx="169.912" cy="39.4346" r="19.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(299.764000, 56.734400) rotate(-180.000000) translate(-299.764000, -56.734400) " cx="299.764" cy="56.7344" r="24"></circle>
+                <path d="M299.764,80.2334 C312.742692,80.2334 323.264,69.7120916 323.264,56.7334 C323.264,43.7547084 312.742692,33.2334 299.764,33.2334 C286.785308,33.2334 276.264,43.7547084 276.264,56.7334 C276.264,69.7120916 286.785308,80.2334 299.764,80.2334 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(299.764000, 56.733400) rotate(-180.000000) translate(-299.764000, -56.733400) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(299.764000, 56.733400) rotate(-180.000000) translate(-299.764000, -56.733400) " cx="299.764" cy="56.7334" r="19.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(292.545000, 263.347000) rotate(-180.000000) translate(-292.545000, -263.347000) " cx="292.545" cy="263.347" r="24"></circle>
+                <path d="M292.545,286.846 C305.523692,286.846 316.045,276.324692 316.045,263.346 C316.045,250.367308 305.523692,239.846 292.545,239.846 C279.566308,239.846 269.045,250.367308 269.045,263.346 C269.045,276.324692 279.566308,286.846 292.545,286.846 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(292.545000, 263.346000) rotate(-180.000000) translate(-292.545000, -263.346000) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(292.545000, 263.346000) rotate(-180.000000) translate(-292.545000, -263.346000) " cx="292.545" cy="263.346" r="19.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(99.510000, 112.389000) rotate(-180.000000) translate(-99.510000, -112.389000) " cx="99.51" cy="112.389" r="24"></circle>
+                <path d="M99.51,135.888 C112.488692,135.888 123.01,125.366692 123.01,112.388 C123.01,99.4093084 112.488692,88.888 99.51,88.888 C86.5313084,88.888 76.01,99.4093084 76.01,112.388 C76.01,125.366692 86.5313084,135.888 99.51,135.888 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(99.510000, 112.388000) rotate(-180.000000) translate(-99.510000, -112.388000) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(99.510000, 112.388000) rotate(-180.000000) translate(-99.510000, -112.388000) " cx="99.51" cy="112.388" r="19.5"></circle>
+                <g id="Group" transform="translate(166.000000, 196.000000)">
+                    <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(24.621000, 24.566000) rotate(-180.000000) translate(-24.621000, -24.566000) " cx="24.621" cy="24.566" r="24"></circle>
+                    <path d="M24.621,48.065 C37.5996916,48.065 48.121,37.5436916 48.121,24.565 C48.121,11.5863084 37.5996916,1.065 24.621,1.065 C11.6423084,1.065 1.121,11.5863084 1.121,24.565 C1.121,37.5436916 11.6423084,48.065 24.621,48.065 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(24.621000, 24.565000) rotate(-180.000000) translate(-24.621000, -24.565000) "></path>
+                    <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(24.621000, 24.565000) rotate(-180.000000) translate(-24.621000, -24.565000) " cx="24.621" cy="24.565" r="19.5"></circle>
+                </g>
+                <circle id="Oval" fill="url(#radialGradient-8)" fill-rule="nonzero" transform="translate(129.135000, 274.073000) rotate(-180.000000) translate(-129.135000, -274.073000) " cx="129.135" cy="274.073" r="24"></circle>
+                <path d="M129.135,297.572 C142.113692,297.572 152.635,287.050692 152.635,274.072 C152.635,261.093308 142.113692,250.572 129.135,250.572 C116.156308,250.572 105.635,261.093308 105.635,274.072 C105.635,287.050692 116.156308,297.572 129.135,297.572 Z" id="Oval" stroke="#00A1E9" opacity="0.56" stroke-dasharray="2" transform="translate(129.135000, 274.072000) rotate(-180.000000) translate(-129.135000, -274.072000) "></path>
+                <circle id="Oval" stroke="#00A1E9" fill="#111932" fill-rule="nonzero" transform="translate(129.135000, 274.072000) rotate(-180.000000) translate(-129.135000, -274.072000) " cx="129.135" cy="274.072" r="19.5"></circle>
+                <text id="40%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="158.426758" y="42">40%</tspan>
+                </text>
+                <text id="7.5%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="287.254883" y="60">7.5%</tspan>
+                </text>
+                <text id="10%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="87.4238281" y="115">10%</tspan>
+                </text>
+                <text id="5%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="120.106445" y="277">5%</tspan>
+                </text>
+                <text id="20%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="178.426758" y="224">20%</tspan>
+                </text>
+                <text id="7.5%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="171.254883" y="139">7.5%</tspan>
+                </text>
+                <text id="10%" font-family="EurostileRegular, Eurostile" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="280.423828" y="267">10%</tspan>
+                </text>
+            </g>
+            <text id="Private" font-family="EurostileRegular, Eurostile" font-size="8" font-weight="normal" line-spacing="8" fill="#FFFFFF">
+                <tspan x="194.857422" y="110.066406">Private</tspan>
+            </text>
+            <text id="PreICO" font-family="EurostileRegular, Eurostile" font-size="8" font-weight="normal" line-spacing="8" fill="#FFFFFF">
+                <tspan x="43.90625" y="115.066406">PreICO</tspan>
+            </text>
+            <text id="PubICO" font-family="EurostileRegular, Eurostile" font-size="10" font-weight="normal" line-spacing="8" fill="#FFFFFF">
+                <tspan x="152.044434" y="9.33300781">PubICO</tspan>
+            </text>
+            <text id="Game-funding-pool" font-family="EurostileRegular, Eurostile" font-size="8" font-weight="normal" line-spacing="8" fill="#FFFFFF">
+                <tspan x="227.695312" y="207.066406">Game </tspan>
+                <tspan x="217.632812" y="215.066406">funding pool</tspan>
+            </text>
+            <text id="Team/Developer/Advis" font-family="EurostileRegular, Eurostile" font-size="8" font-weight="normal" line-spacing="8" fill="#FFFFFF">
+                <tspan x="269.28125" y="18.0664062">Team/Developer/</tspan>
+                <tspan x="288.175781" y="26.0664062">Advisor</tspan>
+            </text>
+            <text id="Marketing/Partnershi" font-family="EurostileRegular, Eurostile" font-size="8" font-weight="normal" line-spacing="10" fill="#FFFFFF">
+                <tspan x="253.757812" y="299">Marketing/Partnership</tspan>
+            </text>
+            <text id="Founder-(12-month-lo" font-family="EurostileRegular, Eurostile" font-size="6" font-weight="normal" line-spacing="6" fill="#FFFFFF">
+                <tspan x="117.606445" y="306.799805">Founder</tspan>
+                <tspan x="105.120117" y="312.799805">(12 month locked)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
