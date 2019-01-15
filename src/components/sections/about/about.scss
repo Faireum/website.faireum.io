@@ -1,0 +1,381 @@
+.about {
+  @include bp($mobile) {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+  padding-top: 64px;
+  padding-bottom: 32px;
+  &__container {
+    @include container;
+  }
+
+  &__info {
+    margin-bottom: 80px;
+
+    h2 {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__one {
+    @include bp($mobile) {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    overflow: hidden;
+    margin: -12px;
+
+    &-half {
+      width: 50%;
+      padding: 12px;
+
+      @include bp($mobile) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &-illustration {
+      @include bp($mobile) {
+        padding-bottom: 48px;
+      }
+
+      width: 100%;
+      max-width: 535px;
+    }
+
+    &-text {
+      @include bp($mobile) {
+        padding: 0;
+      }
+      @include bp($tablet) {
+        padding: 0;
+      }
+
+      padding-left: 112px;
+    }
+  }
+
+  &__cubes {
+    @include bp($mobile) {
+      bottom: -175%;
+    }
+    position: absolute;
+    bottom: -90%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    svg {
+      display: block;
+
+      .cube-1 {
+        transform: translatey(0);
+        animation: levitation 6s ease-in-out infinite;
+      }
+      .cube-2 {
+        transform: translatey(0);
+        animation: levitation 8s ease-in-out infinite;
+      }
+      .cube-3 {
+        transform: translatey(0);
+        animation: levitation 7s ease-in-out infinite;
+      }
+      .cube-4 {
+        transform: translatey(0);
+        animation: levitation 5s ease-in-out infinite;
+      }
+      // .cube-5 {
+      //   transform: translatey(0);
+      //   animation: levitation 9s ease-in-out infinite;
+      // }
+    }
+  }
+
+  &__two {
+    @include bp($mobile) {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    h3 {
+      @include bp($mobile) {
+        margin: 48px;
+      }
+
+      text-align: center;
+      margin-bottom: 78px;
+    }
+
+    &-inner {
+      @include bp($mobile) {
+        flex-direction: column;
+        margin: 0;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      overflow: hidden;
+      margin: -12px;
+    }
+
+    &-bg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2443px;
+      height: 2443px;
+      background-image: $radial-gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &-half {
+      width: 50%;
+      padding: 12px;
+
+      @include bp($mobile) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &-info {
+      @include bp($mobile) {
+        padding-left: 0;
+        padding-bottom: 80px;
+      }
+      @include bp($tablet) {
+        padding-left: 0;
+      }
+
+      padding-left: 112px;
+      h3 {
+        max-width: 330px;
+        margin-bottom: 48px;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-right: 24px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-illustration {
+      img {
+        @include bp($mobile) {
+          width: auto;
+          margin: 0 auto;
+        }
+
+        width: 100%;
+      }
+    }
+  }
+
+  &__three {
+
+    h3 {
+      @include bp($mobile) {
+        margin-bottom: 32px;
+      }
+      @include bp($tablet) {
+        margin-bottom: 32px;
+      }
+
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    &-bg {
+      position: absolute;
+      top: 250%;
+      left: 50%;
+      transform: translateX(-30%);
+      width: 1834px;
+      height: 1834px;
+      background-image: $radial-gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &-info {
+      @include bp($mobile) {
+        padding-left: 0;
+        padding-bottom: 60px;
+      }
+      @include bp($tablet) {
+        padding-left: 0;
+      }
+
+      padding-bottom: 60px;
+    }
+
+    &-illustration {
+      @include bp($mobile) {
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      margin: 0 auto 80px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: -12px;
+  }
+
+  &__card {
+    @include bp($tablet) {
+      width: 250px;  
+    }
+    width: 25%;
+    height: 305px;
+    padding: 12px;
+  }
+
+  &__four {
+    h3 {
+      @include bp($mobile) {
+        margin: 48px;
+      }
+
+      text-align: center;
+      margin-bottom: 78px;
+    }
+
+    &-items {
+      @include bp($mobile) {
+        margin: 0;
+        flex-wrap: wrap;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: -40px;
+    }
+
+    &-item {
+      @include bp($mobile) {
+        width: 100%;
+        padding: 0;
+
+        &:not(:last-of-type) {
+          margin-bottom: 48px;
+        }
+      }
+
+      width: 33.3333%;
+      padding: 40px;
+    }
+  }
+
+  &__controls {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+
+    position: relative;
+    width: 70px;
+    margin: 0 auto 50px;
+    z-index: 5;
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-prev,
+    &-next {
+      cursor: pointer;
+
+      i {
+        font-size: 24px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        i {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+
+  &__dots {
+    display: none;
+  }
+
+  &__numof {
+    position: absolute;
+    top: 50%;
+    right: -58px;
+    transform: translateY(-50%);
+    font-size: 11px;
+
+    &-cur {
+      margin-right: 5px;
+    }
+
+    &-all {
+      margin-left: 5px;
+      color: $color-text-2;
+    }
+  }
+
+  &__dot {
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 6px;
+    text-indent: -9999px;
+    border: 1px solid $color-white;
+    border-radius: 6px;
+    background: $color-bg;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__counter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 88px;
+    text-align: center;
+
+    &-title {
+      font-size: 12px;
+      line-height: 1.24;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__two-btns {
+    margin-top: 30px;
+  }
+}
