@@ -1,0 +1,58 @@
+section#about.about
+  div.about__container
+    div.about__info
+      h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.module.about.whatFaireum}
+      p.excerpt(data-aos="fade-up", data-aos-delay="300") #{i18n.module.about.explainFaireum1}
+
+    div.about__one 
+      div.about__one-half
+        div.about__one-illustration(data-aos="fade-up", data-aos-delay="200") 
+          img(src=imgUrl+"faireum_introduce.svg", alt=i18n.module.about.whatFaireum)
+      div.about__one-half 
+        div.about__one-text(data-aos="fade-up", data-aos-delay="300")
+          p #{i18n.module.about.explainFaireum2}
+          p #{i18n.module.about.explainFaireum3}
+
+      div.about__cubes 
+        include ../../../icons/cubes1.html
+
+    div.about__three
+      div.about__three-bg
+      h3(data-aos="fade-up", data-aos-delay="200") #{i18n.module.about.basicFramework}
+
+      div.about__three-info
+        p(data-aos="fade-up", data-aos-delay="200") #{i18n.module.about.explainBasicFramework1}
+        p(data-aos="fade-up", data-aos-delay="300") #{i18n.module.about.explainBasicFramework2}
+
+      div.about__three-illustration(data-aos="fade-up", data-aos-delay="300")
+        img.hide-mobile(src=imgUrl + "faireum_framework.svg", alt=i18n.module.about.basicFramework)
+        img.hide-desktop(src=imgUrl + "faireum_framework_mobile.svg", alt=i18n.module.about.basicFramework)
+
+    div.about__four
+        h3(data-aos="fade-up", data-aos-delay="200") #{i18n.module.about.gamesOnFaireum}
+
+        div.about__controls(data-aos="fade-up", data-aos-delay="300")
+          div.about__nav
+            div.about__nav-prev
+              i.icon_arrow-left
+            div.about__nav-next
+              i.icon_arrow-right
+          div.about__dots
+          div.about__numof
+            span.about__numof-cur 1
+            | /
+            span.about__numof-all 0
+
+        div.about__cards.about__slider
+          div.about__card(data-aos="fade-up", data-aos-delay="200")
+            include ../../blocks/card/card
+            +card('icons_categories_lottery.svg', i18n.module.about.gamesLottery, i18n.module.about.gamesLotteryRemark)
+          div.about__card(data-aos="fade-up", data-aos-delay="400")
+            include ../../blocks/card/card
+            +card('icons_categories_casino.svg', i18n.module.about.gamesCasino, i18n.module.about.gamesCasinoRemark)
+          div.about__card(data-aos="fade-up", data-aos-delay="500")
+            include ../../blocks/card/card
+            +card('icons_categories_digital.svg', i18n.module.about.gamesDigital, i18n.module.about.gamesDigitalRemark)
+          div.about__card(data-aos="fade-up", data-aos-delay="600")
+            include ../../blocks/card/card
+            +card('icons_categories_sports.svg', i18n.module.about.gamesBetting, i18n.module.about.gamesBettingRemark)
