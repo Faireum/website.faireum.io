@@ -13,3 +13,7 @@ import 'components/blocks/card/card';
 import 'components/blocks/navigation/navigation';
 import 'components/blocks/select/select';
 
+//Sections
+import 'components/sections/header/header';
+import 'components/sections/promo/promo';
+import 'components/sections/about/about';
