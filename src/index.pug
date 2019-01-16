@@ -4,3 +4,14 @@ doctype html
 html(lang='en')
   include common/pug/head
   body
+    include components/sections/header/header
+    include components/blocks/scroll/scroll
+    include components/blocks/navigation/navigation
+
+    main.main
+      canvas#promoParticles
+
+      include components/sections/promo/promo
+
+      include components/sections/about/about
+
