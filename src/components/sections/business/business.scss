@@ -1,0 +1,273 @@
+.business {
+  @include bp($mobile) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &__container {
+    @include container;
+  }
+
+  &__info {
+    margin-bottom: 80px;
+
+    h2 {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__one {
+    @include bp($mobile) {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    h3 {
+      @include bp($mobile) {
+        margin: 48px;
+      }
+
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    &-inner {
+      @include bp($mobile) {
+        flex-direction: column;
+        margin: 0;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      overflow: hidden;
+      margin: -12px;
+    }
+
+    &-half {
+      @include bp($mobile) {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+
+      width: 50%;
+      min-width: 50%;
+      max-width: 50%;
+      padding: 12px;
+      overflow: hidden;
+    }
+
+    &-illustration {
+      @include bp($mobile) {
+        padding-bottom: 48px;
+
+        img {
+          margin: auto;
+        }
+      }
+
+      width: 100%;
+      max-width: 535px;
+    }
+
+    &-text {
+      @include bp($mobile) {
+        padding-left: 0;
+      }
+      @include bp($tablet) {
+        padding-left: 0;
+      }
+
+      padding-left: 112px;
+    }
+
+    &-bg {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-85%);
+      width: 1432px;
+      height: 1432px;
+      background-image: $radial-gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+
+  &__two {
+    padding: 64px 0;
+    h3 {
+      @include bp($mobile) {
+        margin: 48px;
+      }
+
+      text-align: center;
+      margin-bottom: 78px;
+    }
+  }
+
+  &__infographic {
+    position: relative;
+    h3 {
+      @include bp($mobile) {
+        position: static;
+        text-align: center;
+        margin-bottom: 80px;
+      }
+      @include bp($tablet) {
+        position: relative;
+        text-align: center;
+        margin-bottom: 80px;
+        z-index: 6;
+      }
+
+      position: absolute;
+      left: 0;
+      top: 40px;
+    }
+
+    &-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1986px;
+      height: 1986px;
+      // background-image: url('../img/radial-bg-3.png');
+      background-image: $radial-gradient-2;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &-svg {
+      @include bp($mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include bp($tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      position: relative;
+      z-index: 2;
+    }
+
+    &-shadow {
+      @include bp($mobile) {
+        display: none;
+      }
+      @include bp($tablet) {
+        display: none;
+      }
+
+      display: block;
+      position: absolute;
+      // top: -5px;
+      right: 50px;
+      transition: 0.3s;
+    }
+
+    &-sinusoidal {
+      @include bp($mobile) {
+        display: none;
+      }
+      @include bp($tablet) {
+        display: none;
+      }
+
+      display: block;
+    }
+
+    &-point1,
+    &-point2,
+    &-point3 {
+      @include bp($desktop) {
+        max-width: 260px;
+      }
+
+      @include bp($mobile) {
+        position: static;
+      }
+      @include bp($tablet) {
+        position: static;
+      }
+      position: absolute;
+      text-align: center;
+      max-width: 311px;
+      svg {
+        margin-bottom: 32px;
+      }
+    }
+
+    &-point1 {
+      @include bp($desktop) {
+        top: 63%;
+      }
+      top: 69%;
+      left: 0;
+    }
+    &-point2 {
+      @include bp($desktop) {
+        top: 43%;
+      }
+      top: 49%;
+      left: 35.5%;
+    }
+    &-point3 {
+      @include bp($desktop) {
+        top: 22.5%;
+      }
+      top: 28.5%;
+      right: 0;
+    }
+
+    &-point {
+      &:not(:last-of-type) {
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  &__cubes {
+    @include bp($mobile) {
+      top: -56px;
+      left: -56px;
+    }
+    position: absolute;
+    top: 20px;
+    left: -100px;
+
+    svg {
+      display: block;
+
+      // .cube-1 {
+      //   transform: translatey(0);
+      //   animation: levitation 6s ease-in-out infinite;
+      // }
+      .cube-2 {
+        transform: translatey(0);
+        animation: levitation 8s ease-in-out infinite;
+      }
+      .cube-3 {
+        transform: translatey(0);
+        animation: levitation 7s ease-in-out infinite;
+      }
+      .cube-4 {
+        transform: translatey(0);
+        animation: levitation 5s ease-in-out infinite;
+      }
+    }
+  }
+}
