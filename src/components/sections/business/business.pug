@@ -1,0 +1,20 @@
+section#business.business 
+  div.business__container 
+    div.about__info
+      h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.business}
+
+    div.business__one 
+      div.business__one-bg
+      h3(data-aos="fade-up", data-aos-delay="200") #{i18n.module.business.smartNode}
+      div.business__one-inner
+        div.business__one-half
+          div.business__one-illustration(data-aos="fade-up", data-aos-delay="200")
+            img.hide-mobile(src=imgUrl+"faireum_wallet.png", alt=i18n.common.titles.business)
+            img.hide-desktop(src=imgUrl+"faireum_wallet.png", alt=i18n.common.titles.business)
+        div.business__one-half
+          div.business__one-text(data-aos="fade-up", data-aos-delay="300")
+            p #{i18n.module.business.explainSmartNode1}
+            p #{i18n.module.business.explainSmartNode2}
+            p #{i18n.module.business.explainSmartNode3}
+            p #{i18n.module.business.explainSmartNode4}
+            p #{i18n.module.business.explainSmartNode5}
