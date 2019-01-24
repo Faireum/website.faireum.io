@@ -1,0 +1,30 @@
+mixin slide(title, text, icon)
+  li.problem__slide
+    div.problem__icon
+      img(src=`assets/img/problems/icons_problems_${icon}.svg` alt='icon')
+    h4.problem__title=title
+    p.problem__text=text
+
+section#problem.problem
+  div.problem__container
+    h2(data-aos="fade-up", data-aos-delay="200") #{i18n.module.problems.subTitle}
+    
+    div.problem__controls(data-aos="fade-up", data-aos-delay="300")
+      div.problem__nav
+        div.problem__nav-prev
+          i.icon_arrow-left
+        div.problem__nav-next
+          i.icon_arrow-right
+      div.problem__dots
+      div.problem__numof
+        span.problem__numof-cur 1
+        | /
+        span.problem__numof-all 0
+
+    ul.problem__slider(data-aos="fade-up", data-aos-delay="400")
+      +slide(i18n.module.problems.transparency, i18n.module.problems.transparencyRemark, 'lack')
+      +slide(i18n.module.problems.negative, i18n.module.problems.negativeRemark, 'negative')
+      +slide(i18n.module.problems.unfair, i18n.module.problems.unfairRemark, 'unfair')
+      +slide(i18n.module.problems.fees, i18n.module.problems.feesRemark, 'fees')
+      +slide(i18n.module.problems.security, i18n.module.problems.securityRemark, 'lack')
+      +slide(i18n.module.problems.tax, i18n.module.problems.taxRemark, 'tax')
