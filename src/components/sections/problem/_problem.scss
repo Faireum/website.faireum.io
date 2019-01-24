@@ -1,0 +1,217 @@
+.problem {
+  @include bp($mobile) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .slick-slider .slick-list,
+  .slick-slider .slick-track {
+    display: block;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__container {
+    position: relative;
+    @include container;
+  }
+
+  &__slider {
+    @include bp($mobile){
+      width: 100%;
+      margin: 0;
+    }
+
+    @include  bp($tablet){
+      width: 100%;
+      margin: 0;
+    }
+
+    margin-left: -12px;
+    margin-right: -12px;
+    position: relative;
+    width: calc(100% + 24px);
+    z-index: 5;
+  }
+
+  &__slide {
+    @include bp($mobile){
+      width: 100%;
+    }
+
+    @include bp($tablet){
+      width: 100%;
+    }
+
+    margin: 0 12px;
+    padding: 40px 32px;
+    background: $color-card;
+    border-radius: 10px;
+    min-height: 420px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-weight: $font-weight-light;
+    font-family: $font-family-second;
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+    width: 41px;
+    height: 41px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__controls {
+    position: relative;
+    width: 146px;
+    margin: 0 auto 80px;
+    z-index: 5;
+
+    @include bp($mobile) {
+      width: 70px;
+      margin-bottom: 50px;
+    }
+
+    @include bp($tablet) {
+      width: 70px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__nav {
+    width: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-prev,
+    &-next {
+      cursor: pointer;
+
+      i {
+        font-size: 24px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        i {
+          color: $color-blue;
+        }
+      }
+    }
+
+    @include bp($mobile) {
+      width: 100%;
+    }
+
+    @include bp($tablet) {
+      width: 100%;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    width: 82px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $color-white;
+    }
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+        &.slick-active {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    @include bp($mobile) {
+      display: none;
+    }
+
+    @include bp($tablet) {
+      display: none;
+    }
+  }
+
+  &__numof {
+    position: absolute;
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%);
+    font-size: 11px;
+
+    &-cur {
+      margin-right: 5px;
+    }
+
+    &-all {
+      margin-left: 5px;
+      color: $color-text-2;
+    }
+
+    @include bp($mobile) {
+      right: -58px;
+    }
+  }
+
+  &__dot {
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 6px;
+    text-indent: -9999px;
+    border: 1px solid $color-white;
+    border-radius: 6px;
+    background: $color-bg;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__counter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 88px;
+    text-align: center;
+
+    &-title {
+      font-size: 12px;
+      line-height: 1.24;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+}
