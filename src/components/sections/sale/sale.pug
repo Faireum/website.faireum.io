@@ -1,0 +1,51 @@
+mixin tr(title,desc)
+  tr
+    td=title
+    td=desc
+section#sale.sale
+  div.sale__container
+    h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.module.sale.subTitle}
+    p.excerpt(data-aos="fade-up", data-aos-delay="300") #{i18n.module.sale.subDescription}
+
+    div.sale__tabs(data-aos="fade-up", data-aos-delay="400")
+      div.sale__cubes
+        include ../../../icons/cubes4.html
+      div.sale__tabs-items
+        include ../../blocks/select/select
+        +select(i18n.module.sale.tab1, '', i18n.module.sale.tab1, i18n.module.sale.tab2)(class='sale__tabs-select')
+
+        div.sale__tabs-item.sale__tabs-item_open(data-link="plan")
+          h4 #{i18n.module.sale.tab1}
+        div.sale__tabs-item(data-link="distribution")
+          h4 #{i18n.module.sale.tab2}
+
+      div.sale__tabs-boxes
+        div#plan.sale__tabs-box.sale__tabs-box_open
+          table.vertical.table_plan
+            tbody
+              +tr(i18n.module.sale.textName, i18n.module.sale.valueName)
+              +tr(i18n.module.sale.textSymbol, i18n.module.sale.valueSymbol)
+              +tr(i18n.module.sale.textType, i18n.module.sale.valueType)
+              +tr(i18n.module.sale.textIssuer, i18n.module.sale.valueIssuer)
+              +tr(i18n.module.sale.textSupply, i18n.module.sale.valueSupply)
+              +tr(i18n.module.sale.textExchange, i18n.module.sale.valueExchange)
+              +tr(i18n.module.sale.textPreICO, i18n.module.sale.valuePreICO)
+              +tr(i18n.module.sale.textPubICO, i18n.module.sale.valuePubICO)
+              +tr(i18n.module.sale.textRemark, i18n.module.sale.valueRemark)
+
+        div#distribution.sale__tabs-box
+          div.distribution
+            div.distribution_left
+              ul.distribution__list
+                li(data-percent='7,5%') #{i18n.module.sale.holderPrivate}
+                li(data-percent='10%') #{i18n.module.sale.holderPrivate}
+                li(data-percent='40%') #{i18n.module.sale.holderPubICO}
+                li(data-percent='20%') #{i18n.module.sale.holderFundingPool}
+
+            div.distribution_center
+              img.img_chart.circle-chart(src='assets/img/circle-chart.svg' alt='graph')
+            div.distribution_right
+              ul.distribution__list
+                li(data-percent='7,5%') #{i18n.module.sale.holderTeam}
+                li(data-percent='10%') #{i18n.module.sale.holderMarketing}
+                li(data-percent='5%') #{i18n.module.sale.holderFounder}
