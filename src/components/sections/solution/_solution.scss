@@ -1,0 +1,105 @@
+.solution {
+  @include bp($mobile) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1986px;
+    height: 1986px;
+    background-image: $radial-gradient;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &__cubes {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+
+    svg {
+      display: block;
+
+      .cube-1 {
+        transform: translatey(0);
+        animation: levitation 6s ease-in-out infinite;
+      }
+
+      .cube-3 {
+        transform: translatey(0);
+        animation: levitation 8s ease-in-out infinite;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include bp($mobile) {
+      margin-bottom: 80px;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 16px;
+
+    @include bp($mobile) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__container {
+    @include container;
+    position: relative;
+  }
+
+  &__one {
+
+    &-bg {
+      position: absolute;
+      top: 250%;
+      left: 50%;
+      transform: translateX(-30%);
+      width: 1834px;
+      height: 1834px;
+      background-image: $radial-gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &-info {
+      @include bp($mobile) {
+        padding-left: 0;
+        padding-bottom: 60px;
+      }
+      @include bp($tablet) {
+        padding-left: 0;
+      }
+
+      padding-bottom: 60px;
+    }
+
+    &-illustration {
+      @include bp($mobile) {
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      margin: 0 auto 80px;
+    }
+  }
+}
