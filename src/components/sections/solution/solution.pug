@@ -1,0 +1,15 @@
+section#solution.solution
+  div.solution__container
+    div.solution__cubes
+      //include ../../../icons/cubes3.html
+    h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.solution}
+
+    div.solution__content
+      div.solution__one-info
+        p #{i18n.module.solution.explainSolution1}
+        p(data-aos="fade-up", data-aos-delay="300") #{i18n.module.solution.explainSolution2}
+      div.solution__one-illustration(data-aos="fade-up", data-aos-delay="300")
+        img.hide-mobile(src=imgUrl + "faireum_solution.svg", alt=i18n.common.titles.solution)
+        img.hide-desktop(src=imgUrl + "faireum_solution_mobile.svg", alt=i18n.common.titles.solution)
+      div
+        p(data-aos="fade-up", data-aos-delay="400") #{i18n.module.solution.explainSolution3}
