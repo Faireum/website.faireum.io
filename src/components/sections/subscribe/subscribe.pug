@@ -1,0 +1,11 @@
+section#subscribe.subscribe
+  div.subscribe__container
+    h2(data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.subscribe}
+    .subscribe__form
+      form.form_subscribe(data-aos="fade-up", data-aos-delay="300")
+        .input__holder
+          input(type='email' name='email' placeholder=i18n.common.inputs.email)
+          button.btn.btn_big(type='submit') #{i18n.common.inputs.submit}
+    
+  div.subscribe__cubes
+    include ../../../icons/cubes7.html
