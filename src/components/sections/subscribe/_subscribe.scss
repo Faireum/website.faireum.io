@@ -1,0 +1,104 @@
+.subscribe {
+  @include bp($mobile) {
+    padding-top: 56px;
+    padding-bottom: 200px;
+  }
+  padding-top: 64px;
+  padding-bottom: 128px;
+  min-height: 600px;
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    width: 1986px;
+    height: 1986px;
+    background: $radial-gradient-2 no-repeat center;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &__cubes {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    svg {
+      display: block;
+
+      .cube-1 {
+        transform: translatey(0);
+        animation: levitation 6s ease-in-out infinite;
+      }
+      .cube-2 {
+        transform: translatey(0);
+        animation: levitation 8s ease-in-out infinite;
+      }
+      .cube-3 {
+        transform: translatey(0);
+        animation: levitation 7s ease-in-out infinite;
+      }
+      .cube-4 {
+        transform: translatey(0);
+        animation: levitation 5s ease-in-out infinite;
+      }
+      .cube-5 {
+        transform: translatey(0);
+        animation: levitation 9s ease-in-out infinite;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  input {
+    width: 100%;
+    padding-right: 44px;
+
+    @include bp($mobile) {
+      margin-bottom: 48px;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0;
+    z-index: 5;
+
+    @include bp($mobile) {
+      position: static;
+      margin: auto;
+    }
+  }
+
+  .form_subscribe {
+    margin: 0 auto;
+    max-width: 424px;
+  }
+
+  .input__holder {
+    position: relative;
+    width: 100%;
+    padding-right: 100px;
+
+    @include bp($mobile) {
+      padding-right: 0;
+    }
+  }
+}
