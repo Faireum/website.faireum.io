@@ -1,0 +1,19 @@
+include ../../blocks/accordion/accordion
+
+section#faq.faq
+  h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.faq}
+  div.faq__container
+    div.accordion.js-accordion
+      div.accordion-half(data-aos="fade-up", data-aos-delay="300")
+        +accordionItem(i18n.module.faq.Q1, i18n.module.faq.A1)
+        +accordionItem(i18n.module.faq.Q2, i18n.module.faq.A2)
+        +accordionItem(i18n.module.faq.Q3, i18n.module.faq.A3)
+        +accordionItem(i18n.module.faq.Q4, i18n.module.faq.A4)
+        +accordionItem(i18n.module.faq.Q5, i18n.module.faq.A5)
+      div.accordion-half(data-aos="fade-up", data-aos-delay="400")
+        +accordionItem(i18n.module.faq.Q6, i18n.module.faq.A6)
+        +accordionItem(i18n.module.faq.Q7, i18n.module.faq.A7)
+        +accordionItem(i18n.module.faq.Q8, i18n.module.faq.A8)
+        +accordionItem(i18n.module.faq.Q9, i18n.module.faq.A9)
+        +accordionItem(i18n.module.faq.Q10, i18n.module.faq.A10)
+      div.btn_more #{i18n.module.faq.more}
