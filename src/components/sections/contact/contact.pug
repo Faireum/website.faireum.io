@@ -1,0 +1,12 @@
+section#contact.contact
+  div.contact__container
+    h2.pin(data-aos="fade-up", data-aos-delay="200") #{i18n.common.titles.contact}
+    p.excerpt(data-aos="fade-up", data-aos-delay="300") #{i18n.module.contact.excerpt}
+
+    .contact__form
+      form.form_contact
+        .form__inputs(data-aos="fade-up", data-aos-delay="200")
+          input(type='text' name='name' placeholder=i18n.common.inputs.name)
+          input(type='email' name='email' placeholder=i18n.common.inputs.email)
+        textarea(data-aos="fade-up", data-aos-delay="300", placeholder=i18n.common.inputs.message)
+        button.btn.btn_big(type='submit', data-aos="fade-up", data-aos-delay="400") #{i18n.common.inputs.submit}
