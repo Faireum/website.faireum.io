@@ -1,0 +1,42 @@
+.contact {
+  @include bp ($mobile) {
+    min-height: 718px;
+    padding-top: 56px;
+    padding-bottom: 112px;
+  }
+  min-height: 720px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  .excerpt {
+    margin-bottom: 80px;
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 648px;
+    width: 100%;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  textarea {
+    min-height: 120px;
+    margin-bottom: 48px;
+  }
+}
