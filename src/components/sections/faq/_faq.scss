@@ -1,0 +1,53 @@
+.faq {
+  @include bp($mobile) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+  &__container {
+    @include container;
+  }
+
+  h2 {
+    @include bp($mobile) {
+      margin-bottom: 48px;
+    }
+
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+
+  .accordion {
+    @include bp($tablet) {
+      width: calc(100% + 24px);
+      margin: 0 -12px;
+    }
+
+    @include bp($mobile) {
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    width: calc(100% + 70px);
+    display: flex;
+    margin: 0 -35px;
+
+    &-half {
+      @include bp($tablet) {
+        width: calc(50% - 24px);
+        margin: 0 12px;
+      }
+
+      @include bp($mobile) {
+        width: 100%;
+        margin: 0;
+      }
+
+      width: 50%;
+      margin: 0 35px;
+    }
+  }
+}
