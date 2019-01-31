@@ -1,0 +1,32 @@
+footer#footer.footer
+  div.footer__container
+    img.footer__line(src=imgUrl+"footer-line.svg", alt="footer-line")
+    div.footer__top
+      a.footer__logo(href="index.html")
+        img(src=imgUrl+"logo.svg", alt=i18n.common.projectName)
+
+      nav.footer__nav         
+        div.footer__nav-top
+          a.footer__nav-link(href="#home") #{i18n.common.titles.home}
+          a.footer__nav-link(href="#about") #{i18n.common.titles.about}
+          a.footer__nav-link(href="#business") #{i18n.common.titles.business}
+          a.footer__nav-link(href="#solution") #{i18n.common.titles.solution}
+          a.footer__nav-link(href="#sale") #{i18n.common.titles.sale}
+
+        div.footer__nav-bottom
+          a.footer__nav-link(href="#roadmap") #{i18n.common.titles.roadmap}
+          a.footer__nav-link(href="#faq") #{i18n.common.titles.faq}
+          a.footer__nav-link(href="#contact") #{i18n.common.titles.contact}
+          a.footer__nav-link(href="#partners")
+          a.footer__nav-link(href="#team")
+
+      div.footer__socials 
+        include ../../blocks/socials/socials
+
+    div.footer__bottom
+      div.footer__copyright #{i18n.common.copyright}
+
+      div.footer__links
+        a.footer__link(href="?" title=i18n.common.privacyPolicy) #{i18n.common.privacyPolicy}
+        span |
+        a.footer__link(href="?" title=i18n.common.useTerms) #{i18n.common.useTerms}
